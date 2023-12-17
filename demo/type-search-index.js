@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.example.demo","l":"client"},{"p":"com.example.demo","l":"encrypt"},{"p":"com.example.demo","l":"HelloApplication"},{"p":"com.example.demo","l":"HelloController"},{"p":"com.example.demo","l":"kkiMain"},{"p":"com.example.demo","l":"server"}];updateSearchResults();

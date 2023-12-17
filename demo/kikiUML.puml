@@ -1,0 +1,52 @@
+@startuml
+class com.example.demo.kkiMain {
++ {static} void main(String[])
+}
+class com.example.demo.server {
+- {static} int clientCount
+- {static} int k
+- {static} int k1
+- {static} int k2
++ {static} void main(String[])
+- {static} void receiveString(Socket)
+- {static} void receiveFile(Socket,String)
+}
+class com.example.demo.HelloApplication {
++ void start(Stage)
++ {static} void main(String[])
+}
+class com.example.demo.client {
++ {static} void sendFileToServer(String,int,String)
++ {static} void sendStringToServer(String,int,String)
+}
+class com.example.demo.HelloController {
+- Button kikiSendKey
+- TextField keyWrite
+- Button kikiGet
+- Button kikiGetKey
+- Button keyUpload
+- ComboBox<String> chooseType
+- ObservableList<String> encryptionTypes
+- Label chosenFile
+- Label keyWarning
+- Button kikiSend
+- int k
+- Button kikiUpload
+- Label noCypherType
++ void initialize()
+~ void kikiSend(ActionEvent)
+~ void kikiUpload(ActionEvent)
+~ void kikiSendKey(ActionEvent)
+- void displayError(String)
++ {static} void main(String[])
+}
+class com.example.demo.encrypt {
++ {static} void encryptFileSymmetric(String,String,String)
++ {static} void encryptFileAsymmetric(String,String,String,String)
++ {static} void decryptFileSymmetric(String,String,String)
++ {static} void decryptFileAsymmetric(String,String,String)
+}
+
+
+javafx.application.Application <|-- com.example.demo.HelloApplication
+@enduml
